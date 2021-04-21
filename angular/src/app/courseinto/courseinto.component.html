@@ -1,0 +1,15 @@
+<!-- <iframe width="560" height="315" style="margin: 100px;" src="https://www.youtube.com/embed/6wD4V0rvlDI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <a style="color:white; float:left">E-learning</a>
+    <a   class="bg-dark" style="float:right; color: white; margin-left: 10px; padding:15px;"(click)="courses()">courses</a>
+   
+    <a   class="bg-dark" style="float:right; color: white; margin-left: 1100px; padding:15px;"(click)="logout()">logout</a>
+   
+  </nav>
+
+  
+<iframe width="560" height="315" style="margin: 10px;" [src]="getvideo()" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float: left;margin: 30px;"></iframe>
+<iframe width="560" height="315"  [src]="getpdf()" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="float:right; margin:30px;height:600px;"></iframe>
+<!-- <a href="getvideo()" style="margin-left: 10px;">Video source</a> -->

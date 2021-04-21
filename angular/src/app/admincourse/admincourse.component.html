@@ -1,0 +1,97 @@
+<!-- 
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <a style="color:white;">E-learning</a>
+    <a  (click)="gotologout()" class="bg-dark" style="float:right; color: white; margin-left: 1200px; padding:15px;">logout</a>
+   
+  </nav>
+  
+<br>
+<br>
+<br>
+
+
+<div class="container " style="width:70%; display: inline-block; margin-left: 10px;">
+<div class="row">
+ 
+<div class="card" *ngFor="let data of data" style="display: inline-block; margin:10px" >
+  
+ 
+<div style="column-gap: 30px; float:left">
+    <div class="card-header" style="text-align: center;">{{data.courseName}}</div>
+  <div class="card-body">
+    <img src={{data.courseImg}} style="width: 200px; height: 110px; ">
+      <p>{{data.courseYear}}</p>
+      <p>{{data.courseType}}</p>
+  
+</div>
+</div>
+</div>
+<div class="col-sm-1"></div> 
+</div>
+</div>
+
+
+<div class="column right" style="margin-left: 200px; margin-right: 10px;" style="float:right; margin-bottom: 100px; margin-right: 80px;">
+    <br>
+    <label style="font-size: 20px; margin-left: 80px; font-family:cursive">Update Resource</label><br><br>
+        <form>
+
+          <input matInput class="editfields" name="username" placeholder="Enter course name" style="width:300px;height: 35px; font-family: cursive;text-align: center;" [(ngModel)]="courseName"><br><br>
+          <input matInput class="editfields" name="email" placeholder="Enter Image url"  style="width:300px;height:35px; font-family: cursive;text-align: center;" [(ngModel)]="courseImg"><br><br>
+          <input matInput class="editfields" name="mobilenumber" placeholder="Enter technology"  style="width:300px ;height:35px; font-family: cursive;text-align: center;" [(ngModel)]="courseType"><br><br>
+          <input matInput class="editfields" name="password" placeholder="Enter year" style="width:300px;height:35px; font-family: cursive; text-align: center;"[(ngModel)]="courseYear"><br><br>
+          <input matInput class="editfields" name="password" placeholder="Enter the course url" style="width:300px;height:35px; font-family: cursive; text-align: center;"[(ngModel)]="courseVideourl"><br><br>
+          <input matInput class="editfields" name="password" placeholder="Enter the pdf url" style="width:300px;height:35px; font-family: cursive; text-align: center;"[(ngModel)]="coursePdfurl"><br><br>
+          <button  mat-raised-button id="updatebtn" (click)="updateDetails()" style="width:80px; margin-left: 100px;">Update</button>
+          </form>
+          </div> -->
+
+
+          <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+            <a style="color:white;">E-learning</a>
+            <a  (click)="gotologout()" class="bg-dark" style="float:right; color: white; margin-left: 1100px; padding:15px;margin-right: 10px;">logout</a>
+           
+          </nav>
+          
+        <br>
+        <br>
+        <br>
+        
+        
+        <div class="container " style="width:60%; display: inline-block; margin-left: 10px;">
+        <div class="row">
+         
+        <div class="card" *ngFor="let data of data" style="display: inline-block; margin:10px" >
+          
+         
+        <div style="column-gap: 30px; float:left">
+            <div class="card-header" style="text-align: center;">{{data.courseName}}</div>
+          <div class="card-body">
+            <img src={{data.courseImg}} style="width: 200px; height: 110px; ">
+              <p>{{data.courseYear}}</p>
+              <p>{{data.courseType}}</p>
+          
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-1"></div> 
+        </div>
+        </div>
+        
+        
+        <div class="column right" style="margin-left: 100px; " style="float:right; margin-bottom: 100px; margin-right: 80px;">
+            <br>
+            <label style="font-size: 20px; margin-left: 80px; font-family:cursive">Update Resource</label><br><br>
+                <form>
+        
+                  <input matInput class="editfields" name="username" placeholder="Enter course name" style="width:300px;height: 35px; font-family: cursive;text-align: center;" [(ngModel)]="courseName"><br><br>
+                  <input matInput class="editfields" name="email" placeholder="Enter Image url"  style="width:300px;height:35px; font-family: cursive;text-align: center;" [(ngModel)]="courseImg"><br><br>
+                  <input matInput class="editfields" name="mobilenumber" placeholder="Enter technology"  style="width:300px ;height:35px; font-family: cursive;text-align: center;" [(ngModel)]="courseType"><br><br>
+                  <input matInput class="editfields" name="password" placeholder="Enter year" style="width:300px;height:35px; font-family: cursive; text-align: center;"[(ngModel)]="courseYear"><br><br>
+                  <input matInput class="editfields" name="password" placeholder="Enter the course url" style="width:300px;height:35px; font-family: cursive; text-align: center;"[(ngModel)]="courseVideourl"><br><br>
+                  <input matInput class="editfields" name="password" placeholder="Enter the pdf url" style="width:300px;height:35px; font-family: cursive; text-align: center;"[(ngModel)]="coursePdfurl"><br><br>
+                  <button  mat-raised-button id="updatebtn" (click)="updateDetails()" style="width:80px; margin-left: 100px;">Update</button>
+                  </form>
+                  </div>

@@ -1,0 +1,33 @@
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+    <a style="color:white;">E-learning</a>
+    <a  (click)="gotologout()" class="bg-dark" style="float:right; color: white; margin-left: 1200px; padding:15px;">logout</a>
+   
+  </nav>
+  <form class="form-inline" action="/action_page.php" style="margin-left: 400px;">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" style="width:400px" (input)="search()" [(ngModel)]="courseName">
+    
+  </form>
+<br>
+<br>
+<br>
+
+
+<div class="container" style="width: 100%;">
+<div class="row">
+  
+<div class="card col-md-3 mr-5"   *ngFor="let data of data" style="margin:10px" routerLink="/details/:{{data.courseName}}" >
+<!-- <div class="col-sm-1"></div> -->
+<div style="column-gap: 300px;">
+    <div class="card-header" style="text-align: center;">{{data.courseName}}</div>
+  <div class="card-body">
+    <img  src={{data.courseImg}} style="width: 200px; height: 110px; ">
+      <p  >{{data.courseYear}}</p>
+      <p>{{data.courseType}}</p>
+  </div>
+</div>
+</div>
+<div class="col-sm-1"></div> 
+</div>
+</div>
